@@ -4,7 +4,7 @@ variable "ec2_ami" {
   # default     = "ami-063d43db0594b521b" # Default AMI for the EC2 instance
 }
 
-variable "vpc_tags" {
+variable "ec2_tags" {
   description = "This is tags for ec2"
   type        = map(string)
   # default     = {
