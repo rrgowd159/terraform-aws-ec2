@@ -1,32 +1,31 @@
-variable "ec2_ami" {
-  description = "This is ec2 instance"
+variable "instance_type" {
+  description = "The type of EC2 instance"
   type        = string
-  # default     = "ami-063d43db0594b521b" # Default AMI for the EC2 instance
 }
 
-variable "ec2_tags" {
-  description = "This is tags for ec2"
+variable "ami_id" {
+  description = "The AMI ID to use for the EC2 instance"
+  type        = string
+}
+
+variable "key_name" {
+  description = "The key pair name for SSH access"
+  type        = string
+}
+
+variable "tags" {
+  description = "Tags to apply to the instance"
   type        = map(string)
-  # default     = {
-  #   "Name" = "My_EC2" # Default name tag for the EC2 instance
-  #   "Env"  = "Test"   # Default environment tag set to 'Test'
-  # }
 }
 
-variable "ec2_type" {
-  description = "This is instance type"
+
+variable "availability_zone" {
+  description = "The availability zone to launch the instance"
   type        = string
-  # default     = "t2.micro" # Default instance type is 't2.micro'
 }
 
-variable "ec2_zone" {
-  description = "This is availability zone"
-  type        = string
-  # default     = "us-east-1a" # Default availability zone set to 'us-east-1a'
-}
 
-variable "ec2_count" {
-  description = "This is count"
+variable "number" {
+  description = "Tags to apply to the instance"
   type        = number
-  # default     = 1 # Default count of EC2 instances is 1
 }
