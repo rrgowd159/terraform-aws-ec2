@@ -22,10 +22,12 @@ variable "tags" {
 variable "availability_zone" {
   description = "The availability zone to launch the instance"
   type        = string
+  default = null
 }
 
 
 variable "number" {
   description = "Tags to apply to the instance"
   type        = number
+  default = null
 }
