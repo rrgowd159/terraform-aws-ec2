@@ -16,6 +16,7 @@ variable "key_name" {
 variable "tags" {
   description = "Tags to apply to the instance"
   type        = map(string)
+  default = {}
 }
 
 
